@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sobre o Sistema - SIRCA</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}?v=1.1">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm mb-5">
+            <div class="container">
+                <span class="navbar-brand text-uppercase fw-bold">Sistema Inteligente de Recomendação para Culturas Agrícolas - SIRCA</span>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('recomendacao.index') }}">PAINEL DE DECISÃO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{{ url_for('recomendacao.sobre') }}">SOBRE O SISTEMA</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container pb-5">
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <div class="card border border-secondary border-opacity-25 shadow-sm p-4 bg-light mb-4">
+                        <h2 class="fw-bold text-success mb-3 fs-3">O que é o SIRCA?</h2>
+                        <p class="text-dark lead fs-5">
+                            O
+                            <strong>Sistema Inteligente de Recomendação de Cultura Agrícola (SIRCA)</strong>
+                            é uma ferramenta de suporte à decisão que une a ciência de dados à agronomia de precisão.
+                        </p>
+                        <p class="text-dark fs-5">
+                            O objetivo do sistema é analisar as características químicas do solo e as condições microclimáticas de uma propriedade para indicar qual cultura possui a maior aptidão biológica para cultivo. Isso reduz os riscos de quebra de safra e otimiza o uso de insumos.
+                        </p>
+                    </div>
+                    <div class="card border border-secondary border-opacity-25 shadow-sm p-4 bg-light">
+                        <h4 class="fw-bold text-dark mb-4 fs-4">Ficha Técnica do Modelo Preditivo</h4>
+                        <div class="row text-center mb-4">
+                            <div class="col-md-4 border-end border-secondary border-opacity-50">
+                                <span class="text-dark small text-uppercase fw-bold">Algoritmo</span>
+                                <h5 class="fw-bold text-dark mt-1 fs-4">Random Forest</h5>
+                            </div>
+                            <div class="col-md-4 border-end border-secondary border-opacity-50">
+                                <span class="text-dark small text-uppercase fw-bold">Precisão Global</span>
+                                <h5 class="fw-bold text-success mt-1 fs-4">99,32%</h5>
+                            </div>
+                            <div class="col-md-4">
+                                <span class="text-dark small text-uppercase fw-bold">Otimização</span>
+                                <h5 class="fw-bold text-primary mt-1 fs-4">Grid Search CV</h5>
+                            </div>
+                        </div>
+                        <h5 class="fw-bold text-dark small text-uppercase mb-3">Como funciona o cálculo de recomendação?</h5>
+                        <p class="text-dark fs-5">
+                            1.
+                            <strong>Predição Algorítmica:</strong>
+                            O modelo processa as 7 variáveis inseridas e calcula a probabilidade matemática para 22 tipos diferentes de culturas catalogadas.
+                            <br>
+                            <br>
+                            2.
+                            <strong>Matriz Diferencial:</strong>
+                            O sistema carrega o perfil médio histórico da planta sugerida (armazenado em
+                            <code>crop_profiles.pkl</code>
+                            ) e compara com o cenário atual do seu terreno.
+                            <br>
+                            <br>
+                            3.
+                            <strong>Geração de Recomendações:</strong>
+                            Caso haja falta ou excesso de algum nutriente ou fator físico, o algoritmo estima matematicamente a correção necessária, gerando o score de
+                            <em>Adequação Potencial</em>
+                            .
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card border border-secondary border-opacity-25 shadow-sm p-4 bg-light h-100">
+                        <h4 class="fw-bold text-dark mb-3 fs-4">Importância das Variáveis</h4>
+                        <p class="text-dark mb-4 fs-5">
+                            Peso de impacto que cada indicador possui na tomada de decisão do algoritmo, extraído diretamente do treinamento do modelo:
+                        </p>
+                        <!-- Barras de progresso com texto escuro e de alto contraste -->
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between fs-6 fw-bold text-dark mb-1">
+                                <span>Pluviosidade (rainfall)</span>
+                                <span>21.81%</span>
+                            </div>
+                            <div class="progress" style="height: 10px;">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 21.81%"></div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between fs-6 fw-bold text-dark mb-1">
+                                <span>Umidade (humidity)</span>
+                                <span>21.71%</span>
+                            </div>
+                            <div class="progress" style="height: 10px;">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 21.71%"></div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between fs-6 fw-bold text-dark mb-1">
+                                <span>Potássio (K)</span>
+                                <span>18.35%</span>
+                            </div>
+                            <div class="progress" style="height: 10px;">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 18.35%"></div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between fs-6 fw-bold text-dark mb-1">
+                                <span>Fósforo (P)</span>
+                                <span>15.30%</span>
+                            </div>
+                            <div class="progress" style="height: 10px;">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 15.30%"></div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between fs-6 fw-bold text-dark mb-1">
+                                <span>Nitrogênio (N)</span>
+                                <span>10.37%</span>
+                            </div>
+                            <div class="progress" style="height: 10px;">
+                                <div class="progress-bar bg-primary" role="progressbar" style="width: 10.37%"></div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <div class="d-flex justify-content-between fs-6 fw-bold text-dark mb-1">
+                                <span>Temperatura</span>
+                                <span>7.49%</span>
+                            </div>
+                            <div class="progress" style="height: 10px;">
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 7.49%"></div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between fs-6 fw-bold text-dark mb-1">
+                                <span>pH do Solo</span>
+                                <span>4.97%</span>
+                            </div>
+                            <div class="progress" style="height: 10px;">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 4.97%"></div>
+                            </div>
+                        </div>
+                        <div class="p-3 bg-white rounded border border-secondary border-opacity-25 fs-6 text-dark">
+                            <strong>Nota técnica:</strong>
+                            Conforme os dados apontam, os fatores climáticos (chuva e umidade) são os principais decisores biológicos para a triagem inicial das culturas.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+body {
+  background-image: linear-gradient(rgba(40, 40, 40, 0.85), rgba(40, 40, 40, 0.85)),
+    url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1470&auto=format&fit=crop');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  min-height: 100vh;
+  margin: 0;
+
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+  font-size: 16px;
+  color: #f8f9fa;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  white-space: normal;
+}
+
+.card {
+  border-radius: 12px;
+  background-color: #f1f3f5 !important;
+  border: 1px solid #7d848c !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+}
+
+.resultado-principal {
+  border-left: 8px solid #198754 !important;
+}
+
+.form-control {
+  border: 2px solid #6c757d;
+  color: #212529;
+  font-weight: 500;
+}
+
+.form-control:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+}
+
+.form-control::placeholder {
+  color: #5a6268 !important;
+  opacity: 1;
+}
+
+.list-group-item {
+  background-color: #ffffff;
+  border-color: #dee2e6;
+}
