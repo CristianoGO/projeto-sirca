@@ -24,14 +24,14 @@ O **SIRCA** é uma aplicação web desenvolvida para auxiliar produtores rurais 
 * **Servidor de Produção:** Gunicorn
 
 ## 📊 Aplicação web do SIRCA:
-([URL_da_Imagem](https://github.com/CristianoGO/projeto-sirca/blob/main/imgs_sirca_app_web/01.png))
+<img src="[URL_da_Imagem](https://github.com/CristianoGO/projeto-sirca/blob/main/imgs_sirca_app_web/01.png)" alt="Texto Alternativo" width="500">
 
 ## 📊 Recomendação:
-([URL_da_Imagem](https://github.com/CristianoGO/projeto-sirca/blob/main/imgs_sirca_app_web/02.png))
+<img src="[URL_da_Imagem](https://github.com/CristianoGO/projeto-sirca/blob/main/imgs_sirca_app_web/02.png)" alt="Texto Alternativo" width="500">
 
 ## 📊 Recomendação atualizada, com aplicação dos fatores limitantes nos dados inseridos no formulário:
-([URL_da_Imagem](https://github.com/CristianoGO/projeto-sirca/blob/main/imgs_sirca_app_web/03.png))
+<img src="[URL_da_Imagem](https://github.com/CristianoGO/projeto-sirca/blob/main/imgs_sirca_app_web/03.png)" alt="Texto Alternativo" width="500">
 
 ## 📊 Sobre o sistema:
-([URL_da_Imagem](https://github.com/CristianoGO/projeto-sirca/blob/main/imgs_sirca_app_web/04.png))
+<img src="[URL_da_Imagem](https://github.com/CristianoGO/projeto-sirca/blob/main/imgs_sirca_app_web/04.png)" alt="Texto Alternativo" width="500">
 
