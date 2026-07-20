@@ -24,14 +24,14 @@ O **SIRCA** é uma aplicação web desenvolvida para auxiliar produtores rurais 
 * **Servidor de Produção:** Gunicorn
 
 ## 📊 Aplicação web do SIRCA:
-<img src="[URL_da_Imagem](https://github.com/CristianoGO/projeto-sirca/blob/main/imgs_sirca_app_web/01.png)" alt="Texto Alternativo" width="500">
+![01](/imgs_sirca_app_web/01.png)
 
 ## 📊 Recomendação:
-<img src="[URL_da_Imagem](https://github.com/CristianoGO/projeto-sirca/blob/main/imgs_sirca_app_web/02.png)" alt="Texto Alternativo" width="500">
+![02](/imgs_sirca_app_web/02.png)
 
 ## 📊 Recomendação atualizada, com aplicação dos fatores limitantes nos dados inseridos no formulário:
-<img src="[URL_da_Imagem](https://github.com/CristianoGO/projeto-sirca/blob/main/imgs_sirca_app_web/03.png)" alt="Texto Alternativo" width="500">
+![03](/imgs_sirca_app_web/03.png)
 
 ## 📊 Sobre o sistema:
-<img src="[URL_da_Imagem](https://github.com/CristianoGO/projeto-sirca/blob/main/imgs_sirca_app_web/04.png)" alt="Texto Alternativo" width="500">
+![04](/imgs_sirca_app_web/04.png)
 
