@@ -22,3 +22,19 @@ O **SIRCA** é uma aplicação web desenvolvida para auxiliar produtores rurais 
 * **Análise de Dados:** Pandas e NumPy
 * **Frontend:** HTML5, CSS3 (Customizado) e Jinja2
 * **Servidor de Produção:** Gunicorn
+
+## 📊 Aplicação web do SIRCA:
+* ![Texto Alternativo](URL_da_Imagem)
+
+## 📊 Recomendação:
+* ![Texto Alternativo](URL_da_Imagem)
+
+## 📊 Correção da recomendação com a aplicação dos fatores limitantes nos valores do formulário:
+* ![Texto Alternativo](URL_da_Imagem)
+
+## 📊 Recomendação atualizada:
+* ![Texto Alternativo](URL_da_Imagem)
+
+## 📊 Sobre o sistema:
+* ![Texto Alternativo](URL_da_Imagem)
+
